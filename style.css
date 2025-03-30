@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(29, 29, 58);
+    color: white;
+}
+
+#timeAndDate {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    height: 400px;
+    justify-content: center;
+    padding: 0px 0;
+}
+
+.card {
+    width: 280px;
+    padding: 20px 8px;
+    background-color: rgba(145, 140, 214, 0.4);
+    border-radius: 20px;
+}
+
+.linkBubble {
+    background-color: rgb(68, 36, 145);
+    border-radius: 10px;
+    padding: 2px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#linkInput {
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    bottom: 5;
+}
+
+#titleBar {
+    text-align: center;
+    font-size: 50px;
+    
+}
+
