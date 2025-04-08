@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"></link>
+    
 </head>
 <body>
     <div id="timeAndDate">
@@ -13,34 +14,95 @@
     </div>
 
     <div id="titleBar" spellcheck="false">
-        <h1 contenteditable="true" id="title">Title Bar</h1>
+        <h1 contenteditable="true" id="title">Rødgrød med fløde</h1>
     </div>
 
     <div class="container">
         <div id="quickLinks" class="card">
-            <form id="linkForm">
-                <input type="text" id="linkInput" placeholder="Lägg till länk">
-            </form>
+            <label class="cardTitle">Snabblänkar</label>
             <div id="linkContainer"></div>
+            <form id="linkForm">
+                <input type="text" id="linkInput" placeholder="Lägg till länk"
+                required></form>
         </div>
     
         <div id="weather" class="card">
-    
+            <label class="cardTitle">Dagens väder</label>
+            <div id="weatherContainer">
+
+                <div class="weatherBubble" id="day1">
+                    <img id="weatherIcon1" class="weatherIcon" src="">
+                    <div class="weatherBubbleContainer">
+                        <label>Idag</label>
+                        <div class="bubbleContainer">
+                            <div id="tempDay1" class="bubble"></div>
+                            <div id="weatherDay1" class="bubble"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weatherBubble">
+                    <img id="weatherIcon2" class="weatherIcon" src="">
+                    <div class="weatherBubbleContainer">
+                        <label>Imorgon</label>
+                        <div class="bubbleContainer">
+                            <div id="tempDay2" class="bubble"></div>
+                            <div id="weatherDay2" class="bubble"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weatherBubble">
+                    <img id="weatherIcon3" class="weatherIcon" src="">
+                    <div class="weatherBubbleContainer">
+                        <label id="day3"></label>
+                        <div class="bubbleContainer">
+                            <div id="tempDay3" class="bubble"></div>
+                            <div id="weatherDay3" class="bubble"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weatherBubble">
+                    <img id="weatherIcon4" class="weatherIcon" src="">
+                    <div class="weatherBubbleContainer">
+                        <label id="day4"></label>
+                        <div class="bubbleContainer">
+                            <div id="tempDay4" class="bubble"></div>
+                            <div id="weatherDay4" class="bubble"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weatherBubble">
+                    <img id="weatherIcon5" class="weatherIcon" src="">
+                    <div class="weatherBubbleContainer">
+                        <label id="day5"></label>
+                        <div class="bubbleContainer">
+                            <div id="tempDay5" class="bubble"></div>
+                            <div id="weatherDay5" class="bubble"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     
-        <div id="temp" class="card">
-    
+        <div id="joke" class="card">
+            <button id="jokeButton">Generera skämt</button>
+            <h5 id="jokeText"></h5>
         </div>
     
         <div id="notes" class="card">
-    
+            <label class="cardTitle">Anteckningar</label>
+            <textarea name="textArea" id="textareaId"></textarea>
         </div>
     
         
     </div>
     
+    <img id="randomImage">
     <div id="randomBackground">
-    
+        <button id="randomButton">Slumpa ny bakgrund</button>
     </div>
 
 
