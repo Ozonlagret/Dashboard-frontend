@@ -136,7 +136,7 @@ async function fetchWeather(latitude, longitude) {
             const temperature = data.main.temp;
             const description = data.weather[0].description;
             const icon = data.weather[0].icon;
-            const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+            const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
             const tempDay = document.getElementById(`tempDay${index + 1}`);
             const weatherDay = document.getElementById(`weatherDay${index + 1}`);
