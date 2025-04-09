@@ -117,7 +117,7 @@ let savedLongitude = localStorage.getItem("longitude");
 
 async function fetchWeather(latitude, longitude) {
     try {
-        const apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&limit=1&appid=${apiKey}&units=metric&lang=sv`;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&limit=1&appid=${apiKey}&units=metric&lang=sv`;
         const response = await fetch(apiUrl);
 
         if (!response.ok) {
